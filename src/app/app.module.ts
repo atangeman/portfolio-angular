@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule
   ],
+  exports: [ HttpModule ],
   providers: [],
   bootstrap: [AppComponent]
 })
