@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { RepoService }  from './repo.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +17,7 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   exports: [ HttpModule ],
-  providers: [],
+  providers: [RepoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
