@@ -19,6 +19,7 @@ export class RepoService {
 	
 	private extractData(res: Response) {
 		let body = res.json();
+		console.log(body);
 		return body.data || { };
 	}
 	

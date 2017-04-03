@@ -8,13 +8,16 @@ import { RepoService } from './repo.service';
 })
 export class AppComponent {
   title = 'app works!';
+  errorMessage: string;
+  repos: {};
   
   constructor (private repoService: RepoService) {
 	  this.getRepos();
   }
   
   getRepos() {
-    var repos = this.repoService.getRepos();
-	console.log(repos);
+    this.repoService.getRepos().subscribe(repos => this.repos = <any>repos,
+								error =>  this.errorMessage = <any>error);
+	console.log(this.repos);
   }
 }
