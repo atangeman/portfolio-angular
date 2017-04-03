@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AngularPortfolio
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
@@ -33,4 +32,3 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 =======
 # portfolio-angular
 Personal portfolio written using Angular2 and Typescript. Features GitHub API
->>>>>>> e0a64c7291a4b2a22dcdba4abf6763865ab9b8d7
