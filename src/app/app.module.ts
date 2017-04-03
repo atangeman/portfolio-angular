@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 
 import { RepoService }  from './repo.service';
 
+import { Repo }  from './repo.model';
+
 @NgModule({
   declarations: [
     AppComponent

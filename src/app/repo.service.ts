@@ -4,6 +4,7 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
+import { Repo } from './repo.model';
 
 @Injectable()
 export class RepoService {
@@ -19,8 +20,13 @@ export class RepoService {
 	
 	private extractData(res: Response) {
 		let body = res.json();
-		console.log(body);
-		return body.data || { };
+		for (var key in body)
+		{
+			if (body.hasOwnProperty(key)) {
+				console.log(key + " -> " + body[key]);
+			}
+		}
+		return body || { };
 	}
 	
 	private handleError (error: Response | any) {
