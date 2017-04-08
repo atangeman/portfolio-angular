@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { RepoService } from './repo.service';
+import { RepoService } from './repo/repo.service';
 import { Observable }  from 'rxjs/Observable';
-import { Repo } from './repo.model';
+import { Repo } from './repo/repo.model';
 
 import 'rxjs/add/operator/map';
 @Component({
