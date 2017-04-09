@@ -1,0 +1,15 @@
+<div class="container">
+  <accordion>
+    <accordion-group>
+      <div accordion-heading>
+        Projects
+        <i class="pull-right float-xs-right glyphicon"></i>
+      </div>
+      <ul class="nav navbar-nav side-nav">
+        <li class="nav-item" *ngFor="let repo of repos">
+          <a class="nav-link" href="#"> {{repo.name}} </a>
+        </li>
+      </ul>
+    </accordion-group>
+  </accordion>
+</div>
