@@ -1,6 +1,18 @@
-<h1>
-  {{title}}
-</h1>
-<ul>
-  <li *ngFor="let repo of repos">{{repo.name}}</li>
-</ul>
+<div class="page-container">
+  <div>
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-left">
+
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li *ngFor="let repo of repos">
+              <a href="#"> {{repo.name}} </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RepoService } from './repo/repo.service';
+import { RepoService } from './repos/repo.service';
 import { Observable }  from 'rxjs/Observable';
-import { Repo } from './repo/repo.model';
+import { Repo } from './repos/repo.model';
 
 import 'rxjs/add/operator/map';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css', '../assets/bootstrap.css', '../assets/base.css']
 })
 export class AppComponent {
   title = 'Project Repositories';
