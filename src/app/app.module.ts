@@ -10,10 +10,12 @@ import { RepoService }  from './repos/repo.service';
 import { Repo }  from './repos/repo.model';
 
 import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
