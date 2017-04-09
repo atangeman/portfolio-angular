@@ -1,0 +1,20 @@
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    padding-top: 75px;
+    width: 250px;
+    height: 100%;
+    overflow-y: auto;
+    background: #FFF;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+.portfolio {
+    padding: 50px 0;
+    position: relative;
+}

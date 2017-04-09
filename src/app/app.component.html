@@ -1,25 +1,26 @@
-<div id="wrapper">
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isCollapsed = !isCollapsed" aria-controls="navbarSupportedContent"
-      aria-expanded="true" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
   </button>
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <div [collapse]="isCollapsed" class="card card-block card-header">
-      <accordion>
-        <accordion-group>
-          <div accordion-heading>
-            Projects
-            <i class="pull-right float-xs-right glyphicon" [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
-          </div>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item" *ngFor="let repo of repos">
-              <a class="nav-link" href="#"> {{repo.name}} </a>
-            </li>
-          </ul>
-        </accordion-group>
-      </accordion>
+  <a class="navbar-brand" href="#">Dashboard</a>
+</nav>
+<section id="sidebar">
+  <div id="sidebar-wrapper">
+    <app-sidebar></app-sidebar>
+  </div>
+</section>
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Simple Sidebar</h1>
+        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will
+          appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On
+          small screens, the page content will be pushed off canvas.</p>
+        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+      </div>
     </div>
-  </nav>
-</div>
+  </div>
+</section>
