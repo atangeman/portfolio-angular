@@ -1,18 +1,25 @@
-<div class="page-container">
-  <div>
-    <div class="container">
-      <div class="row row-offcanvas row-offcanvas-left">
+<div id="wrapper">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isCollapsed = !isCollapsed" aria-controls="navbarSupportedContent"
+      aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="navbar-brand" href="#">Navbar</a>
 
-        <!-- sidebar -->
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-          <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li *ngFor="let repo of repos">
-              <a href="#"> {{repo.name}} </a>
+    <div [collapse]="isCollapsed" class="card card-block card-header">
+      <accordion>
+        <accordion-group>
+          <div accordion-heading>
+            Projects
+            <i class="pull-right float-xs-right glyphicon" [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+          </div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" *ngFor="let repo of repos">
+              <a class="nav-link" href="#"> {{repo.name}} </a>
             </li>
           </ul>
-        </div>
-      </div>
+        </accordion-group>
+      </accordion>
     </div>
-  </div>
+  </nav>
 </div>

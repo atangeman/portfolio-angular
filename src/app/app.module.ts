@@ -9,6 +9,8 @@ import { RepoService }  from './repos/repo.service';
 
 import { Repo }  from './repos/repo.model';
 
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +18,8 @@ import { Repo }  from './repos/repo.model';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AccordionModule.forRoot()
   ],
   exports: [ HttpModule ],
   providers: [RepoService],
