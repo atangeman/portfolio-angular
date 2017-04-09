@@ -26,6 +26,7 @@ export class RepoService {
 				console.log(key + " -> " + body[key]);
 			}
 		}
+					console.log(body);
 		return body || { };
 	}
 	
