@@ -4,6 +4,11 @@
 .extradiv {
      top:0;
 }
+
+main {
+    max-width: 700px;
+}
+
 a { 
     color: deepskyblue;
 }

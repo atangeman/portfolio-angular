@@ -9,11 +9,11 @@ body {
 
 body,html,.row-offcanvas {
   height:100%;
-  width: auto;
+
 }
 
 #sidebar {
-  min-width: 250px;
+  min-width: 300px;
   background-color:#4B4946;
   float: left;
   height:100%;
@@ -23,7 +23,6 @@ body,html,.row-offcanvas {
 
 #main {
   height:100%;
-  overflow:auto;
 }
 
 @font-face {
