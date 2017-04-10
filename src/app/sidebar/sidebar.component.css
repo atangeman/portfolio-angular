@@ -2,14 +2,23 @@
 .card.customClass .card-header,
 .panel.customClass {
   background-color: #5bc0de;
-  color: #fff;
+
 }
 .panel.customClass .panel-body {
   background-color: #337aa7;
 }
 
+.panel-body{
+    background-color:  	#303030;
+
+}
 .side-nav {
     left: 0;
     top:0;
     max-width: 300px;
+    background-color:  	#303030;
+
+}
+.background {
+  background-color: #404040;
 }

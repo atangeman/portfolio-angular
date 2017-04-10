@@ -1,17 +1,20 @@
 @import "../node_modules/materialize-css/dist/css/materialize.css";
 
+
+
+body {
+     background:	#202020;
+     color: ivory;
+}
+
 body,html,.row-offcanvas {
   height:100%;
   width: auto;
 }
 
-body {
-    width: auto;
-}
-
 #sidebar {
   min-width: 250px;
-  background-color:#f5f5f5;
+  background-color:#383838;
   float: left;
   height:100%;
   position:absolute;
@@ -21,4 +24,16 @@ body {
 #main {
   height:100%;
   overflow:auto;
+}
+
+@font-face {
+    font-family: boldDigits;
+    src: local('Inconsolata');
+    font-weight: bold;
+    unicode-range: U+0030-0039, U+002E;
+}
+
+@font-face {
+    font-family: boldDigits;
+    src: local('Inconsolata');
 }
