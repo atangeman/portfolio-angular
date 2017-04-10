@@ -26,8 +26,8 @@
         "../node_modules/jquery/dist/jquery.js",
         "../node_modules/materialize-css/dist/js/materialize.js"
       ],
-      "environments": {
-        "source": "environments/environment.ts",
+        "environmentSource": "environments/environment.ts",
+        "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
