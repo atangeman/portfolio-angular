@@ -19,7 +19,7 @@ export class AppComponent {
 
   // end button control
   constructor(private repoService: RepoService) {
-    this.numbers = Array.from(Array(150),(x,i)=>String(i));
+    this.numbers = Array.from(Array(100),(x,i)=>String(i+1));
     this.getRepos();
   }
 

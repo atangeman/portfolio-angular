@@ -9,8 +9,7 @@ import { Repo } from '../repos/repo.model';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-
-    title = 'Project Repositories';
+  title = 'Project Repositories';
   errorMessage: string;
   repos: Observable<Repo[]>;
  // start button control
