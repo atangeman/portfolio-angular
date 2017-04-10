@@ -21,29 +21,49 @@ h2,h3,h4,h5,p,a,body,html{
     size: 14px;
 }
 
+h2 ~ *:not(h1):not(h2):not(h3) {
+    margin-left: 15px;
+}
+
+/*
+h1 ~ *:not(h2) {
+    margin-left: 25px;
+}
+h2 ~ *:not(h3) {
+    margin-left: 50px;
+}*/
+
 h1,h2,h3,h4,h5 {
     color: forestgreen;
+        font-weight: bold;
 }
 
 
 h1:before {
-   content: "/* "
+   content: " # "
 }
-
+/*
 h1:after {
-   content: " * /"
+   content: " - "
 }
-
+*/
 h2:before {
-   content: "//  "
+   content: " - "
 }
 h3:before {
-   content: "//  "
+   content: " - "
 }
 h4:before {
-   content: "//  "
+   content: " - "
 }
 h5:before {
-   content: "//  "
+   content: " - "
 }
 
+li {
+    color: goldenrod;
+    opacity: .7;
+}
+li:before {
+    content: " - ";
+}

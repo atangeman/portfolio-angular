@@ -9,16 +9,99 @@
 }
 
 .panel-body{
-    background-color:  	#303030;
+  background-color: #282828;
+      color:white;
 
 }
 .side-nav {
     left: 0;
     top:0;
-    max-width: 300px;
-    background-color:  	#303030;
-
+    max-width: 350px;
+    background-color: #282828;
+    color : white;
 }
+
 .background {
   background-color: #404040;
+}
+
+.collapsible ul {
+  background-color: #282828;
+}
+
+.collapsible li {
+  background-color: #282828;
+}
+
+.collapsible-header {
+  color:white;
+  background-color: #282828;
+}
+
+.collapsible-header .active:hover {
+  color:white;
+  font-size: 12px;
+  background-color:lightsteelblue;
+}
+
+li .collapsible a {
+  font-size: 9px;
+  background-color: #282828;
+  color:white;
+}
+
+.collapsible li:hover {
+  background-color:lightsteelblue;
+  color:white;
+}
+
+.collapsible li .active:hover {
+  background-color: steelblue;
+  color:white;
+}
+
+.collapsible li {
+  background-color: #282828;
+  color: whitesmoke;
+  margin-left: 15px;
+}
+
+.collapsible div {
+  background-color: #282828;
+  color: whitesmoke;
+  margin-left: 15px;
+}
+
+.collapsible div .active:hover{
+  background-color: #282828;
+  color: whitesmoke;
+  margin-left: 15px;
+}
+
+.collapsible .active:hover {
+  background-color: #282828;
+  color: whitesmoke;
+}
+
+
+.userView li a{
+  background-color: #282828;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+li .active {
+  color: white;
+  background-color:steelblue;
+}
+
+.active {
+  color: white;
+  opacity: .9;
+  background-color:steelblue;
+}
+
+ul a{
+  color: whitesmoke;
+  opacity: .75;
 }

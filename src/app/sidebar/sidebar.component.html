@@ -27,17 +27,17 @@
   <li>
     <div class="divider"></div>
   </li>
-  <ul class="collapsible" data-collapsible="expandable">
-    <li class="bold"><a class="collapsible-header active waves-effect waves-teal">Projects</a>
+  <ul class="collapsible" data-collapsible="accordion">
+    <li><a class="collapsible-header active">Projects</a>
       <div class="collapsible-body">
         <ul>
           <li *ngFor="let repo of repos">
-            <a class="waves-effect" href="#"> {{repo.name}} </a>
+            <a href="#"> {{repo.name}} </a>
           </li>
         </ul>
       </div>
     </li>
-    <li class="bold"><a class="collapsible-header waves-effect waves-teal">Components</a>
+    <li><a class="collapsible-header">Writing</a>
       <div class="collapsible-body">
         <ul>
           <li><a href="badges.html">Badges</a></li>
@@ -45,7 +45,6 @@
           <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
           <li><a href="cards.html">Cards</a></li>
           <li><a href="chips.html">Chips</a></li>
-          <li class="active"><a href="collections.html">Collections</a></li>
           <li><a href="footer.html">Footer</a></li>
           <li><a href="forms.html">Forms</a></li>
           <li><a href="icons.html">Icons</a></li>
@@ -55,7 +54,7 @@
         </ul>
       </div>
     </li>
-    <li class="bold"><a class="collapsible-header waves-effect waves-teal">JavaScript</a>
+    <li><a class="collapsible-header">Contact</a>
       <div class="collapsible-body">
         <ul>
           <li><a href="carousel.html">Carousel</a></li>

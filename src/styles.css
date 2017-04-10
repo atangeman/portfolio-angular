@@ -3,8 +3,8 @@
 
 
 body {
-     background:	#202020;
-     color: ivory;
+     background:	#262625;
+     color: #D7D7D7;
 }
 
 body,html,.row-offcanvas {
@@ -14,7 +14,7 @@ body,html,.row-offcanvas {
 
 #sidebar {
   min-width: 250px;
-  background-color:#383838;
+  background-color:#4B4946;
   float: left;
   height:100%;
   position:absolute;
