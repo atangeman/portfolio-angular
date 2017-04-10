@@ -13,11 +13,13 @@ export class AppComponent {
   title = 'Project Repositories';
   errorMessage: string;
   repos: Observable<Repo[]>;
+  numbers: string[];
  // start button control
   public isCollapsed: boolean = false;
 
   // end button control
   constructor(private repoService: RepoService) {
+    this.numbers = Array.from(Array(150),(x,i)=>String(i));
     this.getRepos();
   }
 

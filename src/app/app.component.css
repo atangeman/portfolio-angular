@@ -65,10 +65,35 @@ h5:before {
    content: " - "
 }
 
-li {
+.line-cnt a {
+    background-color: #262625;
+    color:dimgray;
+    justify-content: right;
+    text-align: right;
+    line-height: 7.5px;
+    padding: 5px;
+    width:12px;
+}
+
+.thin-gutter {
+    min-width: 40px;
+    height: 100%;
+    top: 0;
+    float: left;
+    margin-left: 25px;
+    justify-content: right;
+    text-align: right;
+}
+
+li:not(.line-cnt)  {
     color: goldenrod;
     opacity: .7;
 }
-li:before {
+li:before:not(.line-cnt) {
     content: " - ";
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 }
