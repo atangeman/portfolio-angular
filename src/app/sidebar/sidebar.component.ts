@@ -15,7 +15,7 @@ export class SidebarComponent {
   repos: Observable<Repo[]>;
  // start button control
   public isCollapsed: boolean = false;
-
+  public customClass: string = 'customClass';
   // end button control
   constructor(private repoService: RepoService) {
     this.getRepos();
