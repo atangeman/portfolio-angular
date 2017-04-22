@@ -8,8 +8,10 @@ import { Repo } from './repo.model';
 
 @Injectable()
 export class RepoService {
-	private reposUrl = 'https://api.github.com/users/atangeman/repos';
-	
+	private rootApi = 'https://api.github.com/'
+	private reposUrl = this.rootApi + 'users/atangeman/repos';
+	private repoUrl = this.rootApi + 'repos/atangeman/';
+
 	constructor (private http: Http) {}
 	
 	getRepos() {
@@ -18,15 +20,22 @@ export class RepoService {
                     .catch(this.handleError);
 	}
 	
+	getRepoReadme(name:string) {
+		return this.http.get(this.repoUrl + name + '/readme')
+                    .map(this.extractData)
+                    .catch(this.handleError);
+	}
+
 	private extractData(res: Response) {
 		let body = res.json();
+		/*
 		for (var key in body)
 		{
 			if (body.hasOwnProperty(key)) {
 				console.log(key + " -> " + body[key]);
 			}
 		}
-					console.log(body);
+					console.log(body);*/
 		return body || { };
 	}
 	

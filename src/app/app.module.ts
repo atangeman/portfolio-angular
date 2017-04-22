@@ -14,20 +14,27 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 import { MarkdownModule } from 'angular2-markdown';
 
+import { ProjectComponent } from './project/project.component';
+
+import { routing, appRoutingProviders } from './app.routes';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AccordionModule.forRoot(),
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    routing
   ],
   exports: [ HttpModule ],
-  providers: [RepoService],
+  providers: [RepoService, appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

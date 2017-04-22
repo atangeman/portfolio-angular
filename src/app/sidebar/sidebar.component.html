@@ -33,8 +33,8 @@
       <li><a class="collapsible-header">Projects</a>
         <div class="collapsible-body">
           <ul>
-            <li *ngFor="let repo of repos">
-              <a href="#">{{repo.name}}</a>
+            <li *ngFor="let repo of repos">              
+              <a [routerLink]="['/project', repo.name]">{{repo.name}}</a>
             </li>
           </ul>
         </div>
