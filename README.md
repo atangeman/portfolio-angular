@@ -1,6 +1,6 @@
 # Angular Portfolio
 
-This project was built using the most recent iteration of Angular and the [angular-cli](https://github.com/angular/angular-cli). Functional releases of this app are deployed via branch to be hosted on GitHub Pages. 
+This project was built using the most recent iteration of Angular and the [angular-cli](https://github.com/angular/angular-cli). This application is still in development. Functioning pre-releases of this app are regularly deployed to a separate branch accessible by Github Pages.
 
 A viewable example of the most recent build can be found by visiting: 
 
