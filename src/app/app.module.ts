@@ -12,6 +12,8 @@ import { Repo }  from './repos/repo.model';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
+import { MarkdownModule } from 'angular2-markdown';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AccordionModule.forRoot()
+    AccordionModule.forRoot(),
+    MarkdownModule.forRoot()
   ],
   exports: [ HttpModule ],
   providers: [RepoService],
