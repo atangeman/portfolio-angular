@@ -404,10 +404,10 @@ module.exports = module.exports.toString();
 
 exports = module.exports = __webpack_require__(57)();
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Inconsolata);", ""]);
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".extradiv {\n     top:0;\n}\n\nmain {\n    max-width: 700px;\n}\n\na { \n    color: deepskyblue;\n}\n\nh1 {\n    font-family: boldDigits, monospace;\n    font-size: 14px;\n    size: 14px;\n    font-weight: bold;\n}\n\nh2,h3,h4,h5,p,a,body,html{ \n    font-family: boldDigits, monospace;\n    font-size: 14px;\n    size: 14px;\n}\n\nh2 ~ *:not(h1):not(h2):not(h3) {\n    margin-left: 15px;\n}\n\n/*\nh1 ~ *:not(h2) {\n    margin-left: 25px;\n}\nh2 ~ *:not(h3) {\n    margin-left: 50px;\n}*/\n\nh1,h2,h3,h4,h5 {\n    color: forestgreen;\n        font-weight: bold;\n}\n\n\nh1:before {\n   content: \" # \"\n}\n/*\nh1:after {\n   content: \" - \"\n}\n*/\nh2:before {\n   content: \" - \"\n}\nh3:before {\n   content: \" - \"\n}\nh4:before {\n   content: \" - \"\n}\nh5:before {\n   content: \" - \"\n}\n\n.line-cnt a {\n    background-color: #262625;\n    color:#404040;\n    -webkit-box-pack: right;\n        -ms-flex-pack: right;\n            justify-content: right;\n    text-align: right;\n    line-height: 7.5px;\n    padding: 5px;\n    width:12px;\n}\n\n.thin-gutter {\n    min-width: 40px;\n    height: 100%;\n    top: 0;\n    float: left;\n    margin-left: 25px;\n    -webkit-box-pack: right;\n        -ms-flex-pack: right;\n            justify-content: right;\n    text-align: right;\n}\n\nli:not(.line-cnt)  {\n    color: goldenrod;\n    opacity: .7;\n}\nli:before:not(.line-cnt) {\n    content: \" - \";\n}\n\n.no-gutters {\n  margin-right: 0;\n  margin-left: 0;\n}", ""]);
 
 // exports
 
