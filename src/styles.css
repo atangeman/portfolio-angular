@@ -36,3 +36,103 @@ body,html,.row-offcanvas {
     font-family: boldDigits;
     src: local('Inconsolata');
 }
+/*----*/
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+.extradiv {
+     top:0;
+}
+
+.markdown a { 
+    color: deepskyblue;
+}
+
+.markdown p { 
+        font-size: 11px;
+}
+
+.markdown h1 {
+    font-family: boldDigits, monospace;
+    font-size: 12px;
+    size: 12px;
+    font-weight: bold;
+}
+
+.markdown h2, .markdown h3, .markdown h4,h5,p,a,body,html{ 
+    font-family: boldDigits, monospace;
+    font-size: 12px;
+    size: 12px;
+}
+
+.markdown h2 ~ *:not(h1):not(h2):not(h3) {
+    margin-left: 15px;
+}
+
+/*
+h1 ~ *:not(h2) {
+    margin-left: 25px;
+}
+h2 ~ *:not(h3) {
+    margin-left: 50px;
+}*/
+
+.markdown h1,h2,h3,h4,h5 {
+    color: forestgreen;
+        font-weight: bold;
+}
+
+
+.markdown h1:before {
+   content: " # "
+}
+/*
+h1:after {
+   content: " - "
+}
+*/
+.markdown h2:before {
+   content: " - "
+}
+.markdown h3:before {
+   content: " - "
+}
+.markdown h4:before {
+   content: " - "
+}
+.markdown h5:before {
+   content: " - "
+}
+
+.markdown .line-cnt a {
+    background-color: #262625;
+    color:#404040;
+    justify-content: right;
+    text-align: right;
+    line-height: 7.5px;
+    padding: 5px;
+    width:10px;
+}
+
+.markdown .thin-gutter {
+    min-width: 40px;
+    height: 100%;
+    top: 0;
+    float: left;
+    margin-left: 25px;
+    justify-content: right;
+    text-align: right;
+}
+
+.markdown li:not(.line-cnt)  {
+    color: goldenrod;
+    opacity: .7;
+}
+.markdown li:before:not(.line-cnt) {
+    content: " - ";
+}
+
+.markdown .no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}

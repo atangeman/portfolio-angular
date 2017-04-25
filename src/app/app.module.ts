@@ -17,6 +17,7 @@ import { MarkdownModule } from 'angular2-markdown';
 import { ProjectComponent } from './project/project.component';
 
 import { routing, appRoutingProviders } from './app.routes';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { routing, appRoutingProviders } from './app.routes';
     AppComponent,
     SidebarComponent,
     ProjectComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
