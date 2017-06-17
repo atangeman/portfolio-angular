@@ -1,4 +1,4 @@
-
+/*
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 .extradiv {
@@ -26,13 +26,12 @@ h2 ~ *:not(h1):not(h2):not(h3) {
     margin-left: 15px;
 }
 
-/*
 h1 ~ *:not(h2) {
     margin-left: 25px;
 }
 h2 ~ *:not(h3) {
     margin-left: 50px;
-}*/
+}
 
 h1,h2,h3,h4,h5 {
     color: forestgreen;
@@ -48,6 +47,7 @@ h1:after {
    content: " - "
 }
 */
+/*
 h2:before {
    content: " - "
 }
@@ -62,12 +62,14 @@ h5:before {
 }
 
 .line-cnt a {
-    background-color: #262625;
-    color:#404040;
+    color:#999999;
+    opacity: .5;
     justify-content: right;
     text-align: right;
-    line-height: 7.5px;
-    padding: 5px;
+    line-height: 8px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
     width:12px;
 }
 
@@ -93,3 +95,4 @@ li:before:not(.line-cnt) {
   margin-right: 0;
   margin-left: 0;
 }
+*/
