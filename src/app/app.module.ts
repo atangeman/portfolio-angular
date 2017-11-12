@@ -12,19 +12,31 @@ import { Repo }  from './repos/repo.model';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
+import { MarkdownModule } from 'angular2-markdown';
+
+import { ProjectComponent } from './project/project.component';
+
+import { routing, appRoutingProviders } from './app.routes';
+import { HomeComponent } from './home/home.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
+    ProjectComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AccordionModule.forRoot()
+    AccordionModule.forRoot(),
+    MarkdownModule.forRoot(),
+    routing
   ],
   exports: [ HttpModule ],
-  providers: [RepoService],
+  providers: [RepoService, appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

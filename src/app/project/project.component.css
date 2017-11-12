@@ -9,7 +9,7 @@ a {
     color: deepskyblue;
 }
 
-h1 {
+.markdown h1 {
     font-family: boldDigits, monospace;
     font-size: 14px;
     size: 14px;

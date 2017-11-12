@@ -25,16 +25,16 @@
       </div>
     </li>
     <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
+    <li><a [routerLink]="['/home']">Home</a></li>
     <li>
       <div class="divider"></div>
     </li>
     <ul class="collapsible" data-collapsible="accordion">
-      <li><a class="collapsible-header active">Projects</a>
+      <li><a class="collapsible-header">Projects</a>
         <div class="collapsible-body">
           <ul>
-            <li *ngFor="let repo of repos">
-              <a href="#">{{repo.name}}</a>
+            <li *ngFor="let repo of repos">              
+              <a [routerLink]="['/project', repo.name]">{{repo.name}}</a>
             </li>
           </ul>
         </div>
