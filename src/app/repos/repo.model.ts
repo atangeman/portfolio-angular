@@ -1,4 +1,3 @@
-
 export class Repo {
      id: number;
      name: string;
@@ -66,5 +65,5 @@ export class Repo {
      forks: number;
      open_issues: number;
      watchers: number;
-     default_branch: string
+     default_branch: string;
 }
