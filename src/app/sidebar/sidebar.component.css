@@ -9,100 +9,114 @@
 }
 
 .panel-body{
-  background-color: #282828;
-      color:white;
+  /*background-color: #282828;*/
+  background-color: #FFFFFF;
+  color:#282828;
 
 }
 .side-nav {
     left: 0;
     top:0;
     max-width: 350px;
-    background-color: #282828;
-    color : white;
+    background-color: #FFFFFF;
+    color : #404040;
     
 }
 
 .background {
-  background-color: #404040;
+  color: #282828;
 }
 
 .collapsible ul {
-  background-color: #282828;
+  background-color: whitesmoke;
+    color: #282828;
 }
 
+.userView {
+    background-color: white;
+    color: lightgray;
+}
+
+.collapse-panel {
+  background-color: whitesmoke;
+  height: auto;
+}
 .collapsible li {
-  background-color: #282828;
+  background-color: #fcfcfc;
+    color: #282828;
+    border: 1px solid #f9f9f9;
 }
 
 .collapsible-header {
-  color:white;
-  background-color: #282828;
+  color:#282828;
+  background-color: whitesmoke;
 }
 
 .collapsible-header .active:hover {
-  color:white;
+  color:#282828;
   font-size: 12px;
   background-color:lightsteelblue;
 }
 
 li .collapsible a {
   font-size: 9px;
-  background-color: #282828;
-  color:white;
+  background-color: whitesmoke;
+  color:#282828;
 }
 
 .collapsible li:hover {
-  background-color:lightsteelblue;
-  color:white;
+  background-color:whitesmoke;
+  color:#282828;
 }
 
 .collapsible li .active:hover {
-  background-color: steelblue;
-  color:white;
+  background-color:lightsteelblue;
+  color: #282828;
 }
 
-.collapsible li {
-  background-color: #282828;
-  color: whitesmoke;
+.collapsible ul li {
+  background-color: whitesmoke;
+  color: #282828;
   margin-left: 15px;
 }
 
 .collapsible div {
-  background-color: #282828;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: #282828;
   margin-left: 15px;
 }
 
 .collapsible div .active:hover{
-  background-color: #282828;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: #282828;
   margin-left: 15px;
 }
 
 .collapsible .active:hover {
-  background-color: #282828;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: #282828;
 }
 
 
 .userView li a{
-  background-color: #282828;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: #282828;
   font-weight: bolder;
 }
 
 li .active {
-  color: white;
-  background-color:steelblue;
+  color: #282828;
+  
+  background-color:lightsteelblue;
 }
 
 .active {
-  color: white;
+    color: #282828;
   opacity: .9;
-  background-color:steelblue;
+  background-color:lightsteelblue;
 }
 
 ul a{
-  color: whitesmoke;
+    color: #282828;
   opacity: .75;
 }
