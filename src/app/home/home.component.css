@@ -1,95 +1,88 @@
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 80% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h3 { 
+	font: italic normal 1.2em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
 
-.extradiv {
-     top:0;
-}
 
-a { 
-    color: deepskyblue;
-}
+/* specific divs */
+.page-wrapper { 
+	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
 
-h1 {
-    font-family: boldDigits, monospace;
-    font-size: 14px;
-    size: 14px;
-    font-weight: bold;
-}
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	}
 
-h2,h3,h4,h5,p,a,body,html{ 
-    font-family: boldDigits, monospace;
-    font-size: 14px;
-    size: 14px;
+h1 { 
+    font-size: 3.2em;
+	}
+h2 { 
+	font: italic normal 2.2em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
 }
-
-h2 ~ *:not(h1):not(h2):not(h3) {
-    margin-left: 15px;
-}
-
-/*
-h1 ~ *:not(h2) {
-    margin-left: 25px;
-}
-h2 ~ *:not(h3) {
-    margin-left: 50px;
-}*/
-
-h1,h2,h3,h4,h5 {
-    color: forestgreen;
-        font-weight: bold;
-}
-
-
-h1:before {
-   content: " # "
-}
-/*
-h1:after {
-   content: " - "
-}
-*/
-h2:before {
-   content: " - "
-}
-h3:before {
-   content: " - "
-}
-h4:before {
-   content: " - "
-}
-h5:before {
-   content: " - "
-}
-
-.line-cnt a {
-    background-color: #262625;
-    color:#404040;
-    justify-content: right;
-    text-align: right;
-    line-height: 7.5px;
-    padding: 5px;
-    width:12px;
+h4, h5, h6 { 
+	font: italic normal 2.2em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
 }
 
-.thin-gutter {
-    min-width: 40px;
-    height: 100%;
-    top: 0;
-    float: left;
-    margin-left: 25px;
-    justify-content: right;
-    text-align: right;
-}
+.summary {
+	clear: both; 
+	margin: 20px 20px 20px 10px; 
+	width: 160px; 
+	float: left;
+	}
+.summary p {
+	font: italic 1.1em/2.2 georgia; 
+	text-align: center;
+	}
 
-li:not(.line-cnt)  {
-    color: goldenrod;
-    opacity: .7;
-}
-li:before:not(.line-cnt) {
-    content: " - ";
-}
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
+.preamble {
+	clear: right; 
+	padding: 0px 10px 0 10px;
+	}
+.supporting {	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	}

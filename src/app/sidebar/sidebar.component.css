@@ -9,99 +9,142 @@
 }
 
 .panel-body{
-  background-color: #282828;
-      color:white;
-
+  background-color: #fff;
+      color:midnightblue;
 }
+
 .side-nav {
     left: 0;
     top:0;
-    max-width: 350px;
-    background-color: #282828;
-    color : white;
+    min-width: 350px;
+    background-color: #fff;
+    color : darkslategrey;
 }
 
 .background {
-  background-color: #404040;
+    background-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+    opacity: .75;
+}
+
+.background-img {
+  opacity: .15;
 }
 
 .collapsible ul {
-  background-color: #282828;
+  background-color: #fff;
 }
 
 .collapsible li {
-  background-color: #282828;
+  background-color: #fff;
+    margin-left: 15px;
 }
 
 .collapsible-header {
-  color:white;
-  background-color: #282828;
+  color:midnightblue;
+  background-color: #fff;
+    margin-left: 15px;
 }
 
 .collapsible-header .active:hover {
-  color:white;
+  color:darkslategrey;
   font-size: 12px;
   background-color:lightsteelblue;
 }
 
+
 li .collapsible a {
-  font-size: 9px;
-  background-color: #282828;
-  color:white;
+  font-size: 8px;
+  background-color: #fff;
+  color:darkslategrey;
+
 }
 
 .collapsible li:hover {
   background-color:lightsteelblue;
-  color:white;
+  color:darkslategrey;
 }
 
 .collapsible li .active:hover {
   background-color: steelblue;
-  color:white;
+  color:darkslategrey;
 }
 
 .collapsible li {
-  background-color: #282828;
-  color: whitesmoke;
-  margin-left: 15px;
+  background-color: #fff;
+  color: darkslategrey;
+
 }
 
 .collapsible div {
-  background-color: #282828;
-  color: whitesmoke;
-  margin-left: 15px;
+  background-color: #fff;
+  color: darkslategrey;
+
 }
 
 .collapsible div .active:hover{
-  background-color: #282828;
-  color: whitesmoke;
-  margin-left: 15px;
+  background-color: #fff;
+  color: darkslategrey;
+
 }
 
 .collapsible .active:hover {
-  background-color: #282828;
-  color: whitesmoke;
+  background-color: #FFF;
+  color: darkslategrey;
 }
 
-
-.userView li a{
-  background-color: #282828;
-  color: whitesmoke;
+.userInfo li a {
+  margin-bottom: 50px;
+  color: midnightblue;
   font-weight: bolder;
+
+}
+.userView li a{
+  background-color: #337aa7;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+.userInfo .userView a .img-circle	{
+  width: 125px;
+  height: 125px;
+  display: inherit;
+  margin-right: 175px;
+  margin-bottom: 50px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: whitesmoke;
+    
+}
+.name{
+  color: white;
+  font-weight: bolder;
+  nav-right: auto
+}
+.email{
+  color: white;
+  font-weight: bolder;
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 
 li .active {
-  color: white;
+  color: darkslateblue;
   background-color:steelblue;
 }
 
 .active {
-  color: white;
+  color: midnightblue;
   opacity: .9;
   background-color:steelblue;
 }
 
 ul a{
-  color: whitesmoke;
+  color: midnightblue;
   opacity: .75;
+}
+
+.material-icons {
+  margin-right: 15px;
 }
