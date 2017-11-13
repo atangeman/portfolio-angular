@@ -3,7 +3,7 @@
 
 
 body {
-     background:	#262625;
+     background:	#FFFFFF;
      color: #D7D7D7;
 }
 
@@ -105,7 +105,7 @@ h1:after {
 }
 
 .markdown .line-cnt a {
-    background-color: #262625;
+    background-color: #FFFFFF;
     color:#404040;
     justify-content: right;
     text-align: right;
