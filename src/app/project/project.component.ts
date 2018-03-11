@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css']
 })
+
 export class ProjectComponent implements OnInit, OnDestroy {
   projectRepo: Observable<Object>;
   private name: string;
