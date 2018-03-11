@@ -4,7 +4,7 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
-import { Repo } from './repo.model';
+/*import { Repo } from './repo.model';*/
 
 @Injectable()
 export class RepoService {

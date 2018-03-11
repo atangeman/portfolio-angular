@@ -1,98 +1,42 @@
-/*
+
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
-
-.extradiv {
-     top:0;
-}
-
-a { 
-    color: deepskyblue;
-}
-
-h1 {
-    font-family: boldDigits, monospace;
-    font-size: 14px;
-    size: 14px;
-    font-weight: bold;
-}
-
-h2,h3,h4,h5,p,a,body,html{ 
-    font-family: boldDigits, monospace;
-    font-size: 14px;
-    size: 14px;
-}
-
-h2 ~ *:not(h1):not(h2):not(h3) {
-    margin-left: 15px;
-}
-
-h1 ~ *:not(h2) {
-    margin-left: 25px;
-}
-h2 ~ *:not(h3) {
-    margin-left: 50px;
-}
-
-h1,h2,h3,h4,h5 {
-    color: forestgreen;
-        font-weight: bold;
-}
-
-
-h1:before {
-   content: " # "
-}
-/*
-h1:after {
-   content: " - "
-}
-*/
-/*
-h2:before {
-   content: " - "
-}
-h3:before {
-   content: " - "
-}
-h4:before {
-   content: " - "
-}
-h5:before {
-   content: " - "
-}
-
-.line-cnt a {
-    color:#999999;
-    opacity: .5;
-    justify-content: right;
-    text-align: right;
-    line-height: 8px;
-    padding-right: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    width:12px;
-}
-
-.thin-gutter {
-    min-width: 40px;
-    height: 100%;
-    top: 0;
-    float: left;
-    margin-left: 25px;
-    justify-content: right;
-    text-align: right;
-}
-
-li:not(.line-cnt)  {
-    color: goldenrod;
-    opacity: .7;
-}
-li:before:not(.line-cnt) {
-    content: " - ";
-}
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-*/
+html {
+	margin: 0;
+	padding: 0;
+	}
+    
+body { 
+	font: 80% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h3 { 
+	font: italic normal 1.2em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
