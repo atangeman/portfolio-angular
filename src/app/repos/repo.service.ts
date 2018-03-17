@@ -26,7 +26,7 @@ export class RepoService {
 		this.requestOptions = requestOpt;
 	}
 	
-	getRepos() {
+	async getRepos() : Promise<any[]>{
 		let repos = this.http.get(this.reposUrl)
                     .map(this.extractData)
                     .catch(this.handleError);
@@ -34,7 +34,7 @@ export class RepoService {
 		{
 			console.log(value);
 		});
-		return repos;
+		return repos.toPromise();
 	}
 	
 	getRepoReadme(name:string) {

@@ -22,15 +22,11 @@ export class ProjectComponent implements OnInit, OnDestroy {
   async getRepos(repoName: string): Promise<void> {
       this.repoService.getRepoReadme(repoName).subscribe(proj => {
         this.markdownSrc = atob(proj.content);
-        console.log(proj);
+        //console.log(proj);
         });
   }
-/*
-    let list: string[] = await this.repoService.getRepoTags(repoName);
-      if(list.indexOf("portfolio") > -1){
-*/
-  async ngOnInit() {
 
+  ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.name = params["name"]; // cast to number
       this.getRepos(this.name);
