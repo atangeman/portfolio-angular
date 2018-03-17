@@ -1,0 +1,256 @@
+.card.customClass,
+.card.customClass .card-header,
+.panel.customClass {
+  background-color: #5bc0de;
+
+}
+.panel.customClass .panel-body {
+  background-color: #337aa7;
+}
+
+.panel-body{
+<<<<<<< HEAD
+  /*background-color: #282828;*/
+  background-color: #FFFFFF;
+  color:#282828;
+
+=======
+  background-color: #fff;
+      color:midnightblue;
+>>>>>>> 9548871e5f3a631a90da83eec26eaf830df814ea
+}
+
+.side-nav {
+    left: 0;
+    top:0;
+<<<<<<< HEAD
+    max-width: 350px;
+    background-color: #FFFFFF;
+    color : #404040;
+    
+}
+
+.background {
+  color: #282828;
+}
+
+.collapsible ul {
+  background-color: whitesmoke;
+    color: #282828;
+=======
+    min-width: 350px;
+    background-color: #fff;
+    color : darkslategrey;
+}
+
+.background {
+    background-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+    opacity: .75;
+}
+
+.background-img {
+  opacity: .15;
+}
+
+.collapsible ul {
+  background-color: #fff;
+>>>>>>> 9548871e5f3a631a90da83eec26eaf830df814ea
+}
+
+.userView {
+    background-color: white;
+    color: lightgray;
+}
+
+.collapse-panel {
+  background-color: whitesmoke;
+  height: auto;
+}
+.collapsible li {
+<<<<<<< HEAD
+  background-color: #fcfcfc;
+    color: #282828;
+    border: 1px solid #f9f9f9;
+}
+
+.collapsible-header {
+  color:#282828;
+  background-color: whitesmoke;
+}
+
+.collapsible-header .active:hover {
+  color:#282828;
+=======
+  background-color: #fff;
+    margin-left: 15px;
+}
+
+.collapsible-header {
+  color:midnightblue;
+  background-color: #fff;
+    margin-left: 15px;
+}
+
+.collapsible-header .active:hover {
+  color:darkslategrey;
+>>>>>>> 9548871e5f3a631a90da83eec26eaf830df814ea
+  font-size: 12px;
+  background-color:lightsteelblue;
+}
+
+
+li .collapsible a {
+<<<<<<< HEAD
+  font-size: 9px;
+  background-color: whitesmoke;
+  color:#282828;
+}
+
+.collapsible li:hover {
+  background-color:whitesmoke;
+  color:#282828;
+}
+
+.collapsible li .active:hover {
+  background-color:lightsteelblue;
+  color: #282828;
+}
+
+.collapsible ul li {
+  background-color: whitesmoke;
+  color: #282828;
+  margin-left: 15px;
+}
+
+.collapsible div {
+  background-color: whitesmoke;
+  color: #282828;
+  margin-left: 15px;
+}
+
+.collapsible div .active:hover{
+  background-color: whitesmoke;
+  color: #282828;
+  margin-left: 15px;
+}
+
+.collapsible .active:hover {
+  background-color: whitesmoke;
+  color: #282828;
+=======
+  font-size: 8px;
+  background-color: #fff;
+  color:darkslategrey;
+
+}
+
+.collapsible li:hover {
+  background-color:lightsteelblue;
+  color:darkslategrey;
+}
+
+.collapsible li .active:hover {
+  background-color: steelblue;
+  color:darkslategrey;
+}
+
+.collapsible li {
+  background-color: #fff;
+  color: darkslategrey;
+
+}
+
+.collapsible div {
+  background-color: #fff;
+  color: darkslategrey;
+
+}
+
+.collapsible div .active:hover{
+  background-color: #fff;
+  color: darkslategrey;
+
+}
+
+.collapsible .active:hover {
+  background-color: #FFF;
+  color: darkslategrey;
+>>>>>>> 9548871e5f3a631a90da83eec26eaf830df814ea
+}
+
+.userInfo li a {
+  margin-bottom: 50px;
+  color: midnightblue;
+  font-weight: bolder;
+
+}
+.userView li a{
+<<<<<<< HEAD
+  background-color: whitesmoke;
+  color: #282828;
+=======
+  background-color: #337aa7;
+>>>>>>> 9548871e5f3a631a90da83eec26eaf830df814ea
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+<<<<<<< HEAD
+li .active {
+  color: #282828;
+  
+  background-color:lightsteelblue;
+}
+
+.active {
+    color: #282828;
+=======
+.userInfo .userView a .img-circle	{
+  width: 125px;
+  height: 125px;
+  display: inherit;
+  margin-right: 175px;
+  margin-bottom: 50px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: whitesmoke;
+    
+}
+.name{
+  color: white;
+  font-weight: bolder;
+  nav-right: auto
+}
+.email{
+  color: white;
+  font-weight: bolder;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+li .active {
+  color: darkslateblue;
+  background-color:steelblue;
+}
+
+.active {
+  color: midnightblue;
+>>>>>>> 9548871e5f3a631a90da83eec26eaf830df814ea
+  opacity: .9;
+  background-color:lightsteelblue;
+}
+
+ul a{
+<<<<<<< HEAD
+    color: #282828;
+=======
+  color: midnightblue;
+>>>>>>> 9548871e5f3a631a90da83eec26eaf830df814ea
+  opacity: .75;
+}
+
+.material-icons {
+  margin-right: 15px;
+}
