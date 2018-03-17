@@ -43,10 +43,11 @@ export class RepoService {
                     .catch(this.handleError);
 	}
 
-	getRepoTags(name:string) : Observable<string[]> {
-		let resp = this.http.get(this.repoUrl + name + '/topics', this.requestOptions)
+	async getRepoTags(name:string) : Promise<string[]> {
+		const resp = await this.http.get(this.repoUrl + name + '/topics', this.requestOptions)
                     .map(this.extractData)
-                    .catch(this.handleError);
+                    .catch(this.handleError)
+					.toPromise();
 		return resp["names"];
 	}
 
