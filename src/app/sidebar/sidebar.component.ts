@@ -22,10 +22,8 @@ export class SidebarComponent {
 
   async getRepos(): Promise<void> {
     let repoList = await this.repoService.getRepos();
-    console.log(repoList);  
     for(let repo of repoList) {
         let list: string[] = await this.repoService.getRepoTags(repo.name);
-        console.log(list);
         if(list.indexOf("portfolio") > -1) {
           this.repos.push(repo);
       }

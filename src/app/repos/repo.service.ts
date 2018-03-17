@@ -27,40 +27,28 @@ export class RepoService {
 	}
 	
 	async getRepos() : Promise<any[]>{
-		let repos = this.http.get(this.reposUrl)
-                    .map(this.extractData)
-                    .catch(this.handleError);
-		repos.forEach((value:any) => 
-		{
-			console.log(value);
-		});
-		return repos.toPromise();
+		return this.http.get(this.reposUrl)
+			.map(this.extractData)
+			.catch(this.handleError)
+			.toPromise();
 	}
 	
 	getRepoReadme(name:string) {
 		return this.http.get(this.repoUrl + name + '/readme')
-                    .map(this.extractData)
-                    .catch(this.handleError);
+			.map(this.extractData)
+			.catch(this.handleError);
 	}
 
 	async getRepoTags(name:string) : Promise<string[]> {
 		const resp = await this.http.get(this.repoUrl + name + '/topics', this.requestOptions)
-                    .map(this.extractData)
-                    .catch(this.handleError)
-					.toPromise();
+            .map(this.extractData)
+            .catch(this.handleError)
+			.toPromise();
 		return resp["names"];
 	}
 
 	private extractData(res: Response) {
 		let body = res.json();
-		/*
-		for (var key in body)
-		{
-			if (body.hasOwnProperty(key)) {
-				console.log(key + " -> " + body[key]);
-			}
-		}
-					console.log(body);*/
 		return body || { };
 	}
 	
