@@ -19,11 +19,14 @@ export class ProjectComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute, private repoService: RepoService) {
   }
 
-  getRepos(repoUrl: string): void {
-    this.repoService.getRepoReadme(repoUrl).subscribe(proj => {
-      this.markdownSrc = atob(proj.content);
-      console.log(proj);
-    });
+  async getRepos(repoName: string): Promise<void> {
+      let list: Observable<any> = await this.repoService.getRepoTags(repoName);
+      console.log(list);
+      this.repoService.getRepoReadme(repoName).subscribe(proj => {
+        this.markdownSrc = atob(proj.content);
+        console.log(proj);
+        });
+
   }
 
   ngOnInit() {
