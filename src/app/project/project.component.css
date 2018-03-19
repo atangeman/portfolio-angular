@@ -1,41 +1,17 @@
 
+.panel-body .markdown h1, h2 { color: #ff4411; font-size: 48px; font-family: 'Signika', sans-serif; padding-bottom: 10px; }
 
-body { 
-	font: 80% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	margin: 0; 
-	padding: 0;
-	}
-
-h1 { 
-    font-size: 3.2em;
-	}
-
-.h2 { 
-	font: italic normal 2.1em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-}
-.markdown h4, h5, h6 { 
-	font: italic normal 1.1em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
+.nav-tabs {
+    padding-top: 25px;
+    width: 100%;
 }
 
-.markdown h3 {
-	font: italic normal 1.2em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
+#readme-panel {
+    padding-top: 50px;
 }
 
-.markdown h4,h5,p,a,body,html{ 
-	font: 10pt georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	margin: 0; 
-	padding: 0;
-    	margin-top: 0; 
-	text-align: justify;
+
+.content {
+    padding-left: 100px;
+    padding-right: 200px;
 }
