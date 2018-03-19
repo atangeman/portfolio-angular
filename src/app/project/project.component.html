@@ -1,16 +1,34 @@
-<div class="row">
-    <div>
-        <div class="navbar header"> </div>
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#tab1">Readme</a></li>
-            <li><a href="tab2">Source</a></li>
-        </ul>
-    </div>
-    <span> </span>
-    <div class="tab-content">
-        <div class="tab-pane active" id="tab1">
-            <markdown class="markdown" [data]="markdownSrc"></markdown>
+<div class="container-fluid">
+    <div class="row">
+        <span></span>
+        <div class="col-md-12">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#readme-panel" data-toggle="tab">Readme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#panel-287268" data-toggle="tab">Code</a>
+                </li>
+            </ul>
         </div>
-        <div class="tab-pane" id="tab2">Panel 2</div>
+        <div class="col-md-12 content">
+            <div class="tabbable" id="tabs-93517">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="readme-panel">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Documentation</div>
+                            <div class="panel-body">
+                                <markdown class="markdown" [data]="markdownSrc"></markdown>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="panel-287268">
+                        <p>
+                            Howdy, I'm in Section 2.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

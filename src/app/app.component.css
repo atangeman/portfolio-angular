@@ -4,7 +4,8 @@ html {
 	margin: 0;
 	padding: 0;
 	}
-    
+
+	
 body { 
 	font: 80% georgia, sans-serif;
 	line-height: 1.88889;
@@ -13,30 +14,26 @@ body {
 	margin: 0; 
 	padding: 0;
 	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.2em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
+
+	
+	
+	
 abbr {
 	border-bottom: none;
 	}
+
+div #wrapperHeader {
+	width:100%;
+	height:100px; /* height of the background image? */
+	background:url("../assets/img/neural-net.jpg");
+	text-align:center;
+	display: block;
+	opacity: .75;
+}
+	   
+#wrapperHeader #header {
+	width:1000px;
+	height:100px;
+	margin:0 auto;
+}
+	
