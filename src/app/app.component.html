@@ -1,14 +1,22 @@
-<!--/.navbar -->
+<nav class="navbar navbar-static-top" role="navigation">
+    <div class="navbar-header">
+      <a href="#" class="btn btn-info btn-sm">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </a>
 
-<div class="container-fluid">
-  <div id="wrapperHeader">
-    <div id="header">
-    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
   </div>
-  <div class="row">
+      <a class="navbar-brand" href="#">Portfolio</a>
+</nav>
+<!--/.Navbar-->
+
+<div class="container">
+  <div class="row content">
     <app-sidebar class="col-md-3"></app-sidebar>
     <main class="col-md-8 col-sm-6">
       <router-outlet></router-outlet>
     </main>
   </div>
-  <!--/row-offcanvas -->
+</div>
+<!--/row-offcanvas -->
