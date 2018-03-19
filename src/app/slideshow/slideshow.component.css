@@ -1,3 +1,12 @@
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    width: 100%;
+#carouselControls img {
+
+width: 100%;
+
+height: auto;
+min-height: 500px;
+margin-bottom: auto;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
 }

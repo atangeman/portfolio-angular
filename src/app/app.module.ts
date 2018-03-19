@@ -1,5 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { BrowserModule } from '@angular/platform-browser';
+
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -14,6 +16,7 @@ import { CarouselModule } from 'ngx-bootstrap';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 
+import { Event } from '@angular/router';
 
 import { MarkdownModule } from 'angular2-markdown';
 
