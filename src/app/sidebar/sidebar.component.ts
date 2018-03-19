@@ -17,7 +17,7 @@ export class SidebarComponent {
   public customClass: string = 'customClass';
   // end button control
   constructor(private repoService: RepoService) {
-    this.getRepos();
+    //this.getRepos();
   }
 
   async getRepos(): Promise<void> {

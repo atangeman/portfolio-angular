@@ -33,7 +33,7 @@
     </li>
     <div class="collapse-panel">
     <ul class="collapsible" data-collapsible="accordion">
-      <li><a class="collapsible-header">Projects</a>
+      <li><a class="collapsible-header" (click)="getRepos()">Projects</a>
         <div class="collapsible-body">
           <ul>
             <li *ngFor="let repo of repos">              

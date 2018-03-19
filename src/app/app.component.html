@@ -1,13 +1,14 @@
 <!--/.navbar -->
 
 <div class="container-fluid">
-  <div class="row">
-    <div id="wrapperHeader">
-      <div id="header"></div>
+  <div id="wrapperHeader">
+    <div id="header">
     </div>
-    <app-sidebar class="col-md-2"></app-sidebar>
-      <main class="col-md-10 col-sm-6">
-    <router-outlet></router-outlet>
+  </div>
+  <div class="row">
+    <app-sidebar class="col-md-3"></app-sidebar>
+    <main class="col-md-8 col-sm-6">
+      <router-outlet></router-outlet>
     </main>
   </div>
   <!--/row-offcanvas -->

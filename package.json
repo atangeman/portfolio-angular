@@ -23,11 +23,13 @@
     "angular2-markdown": "^1.5.2",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "jquery": "^3.3.1",
     "materialize": "^1.0.0",
     "materialize-css": "^0.100.2",
     "ngx-bootstrap": "^1.6.5",
     "npm": "^5.7.1",
     "rxjs": "^5.0.1",
+    "tether": "^1.4.3",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"
   },

@@ -5,12 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { RepoService }  from './repos/repo.service';
+import { RepoService } from './repos/repo.service';
 
-import { Repo }  from './repos/repo.model';
+import { Repo } from './repos/repo.model';
 
 import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { CarouselModule } from 'ngx-bootstrap';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+
 
 import { MarkdownModule } from 'angular2-markdown';
 
@@ -19,23 +22,24 @@ import { ProjectComponent } from './project/project.component';
 import { routing, appRoutingProviders } from './app.routes';
 import { HomeComponent } from './home/home.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
+    SlideshowComponent,
     ProjectComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AccordionModule.forRoot(),
+    CarouselModule.forRoot(),
     MarkdownModule.forRoot(),
     routing
   ],
-  exports: [ HttpModule ],
+  exports: [HttpModule],
   providers: [RepoService, appRoutingProviders],
   bootstrap: [AppComponent]
 })
