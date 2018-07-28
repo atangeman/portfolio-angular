@@ -20,7 +20,9 @@ export class ProjectComponent implements OnInit, OnDestroy {
   }
 
   async getRepos(repoName: string): Promise<void> {
-      this.repoService.getRepoReadme(repoName).subscribe(proj => {
+      this.repoService.getRepoReadme(repoName)
+                      //.catch(this.handleError)
+                      .subscribe(proj => {
         this.markdownSrc = atob(proj.content);
         //console.log(proj);
         });
@@ -29,11 +31,20 @@ export class ProjectComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.name = params["name"]; // cast to number
-      this.getRepos(this.name);
+      this.getRepos(this.name)
+          //.catch(this.handleError)
     });
   }
 
   ngOnDestroy() {
     if (this.route) this.sub.unsubscribe();
+  }
+
+  handleError (error: Response | any) {
+		// In a real world app, you might use a remote logging infrastructure
+		let errMsg: string;
+		errMsg = error.message ? error.message : error.toString();
+		console.error(errMsg);
+		return Observable.throw(errMsg);
   }
 }
