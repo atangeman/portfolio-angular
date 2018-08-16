@@ -16,7 +16,7 @@
 }
 .side-nav {
     left: 0;
-    top:0;
+    top:60px;
     max-width: 350px;
     background-color: #FFFFFF;
     color : #404040;
@@ -32,8 +32,14 @@
     color: #282828;
 }
 
+.userView .background {
+    background-color: white;
+    color: lightgray;
+}
+
 .userView {
     background-color: white;
+    opacity: .95;
     color: lightgray;
 }
 
