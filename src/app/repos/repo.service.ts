@@ -29,20 +29,20 @@ export class RepoService {
 	async getRepos() : Promise<any[]>{
 		return this.http.get(this.reposUrl)
 			.map(this.extractData)
-			//.catch(this.handleError)
+			.catch(this.handleError)
 			.toPromise();
 	}
 	
 	getRepoReadme(name:string) {
 		return this.http.get(this.repoUrl + name + '/readme')
 			.map(this.extractData)
-			//.catch(this.handleError);
+			.catch(this.handleError);
 	}
 
 	async getRepoTags(name:string) : Promise<string[]> {
 		const resp = await this.http.get(this.repoUrl + name + '/topics', this.requestOptions)
             .map(this.extractData)
-            //.catch(this.handleError)
+            .catch(this.handleError)
 			.toPromise();
 		return resp["names"];
 	}

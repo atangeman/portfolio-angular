@@ -39,12 +39,4 @@ export class ProjectComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     if (this.route) this.sub.unsubscribe();
   }
-
-  handleError (error: Response | any) {
-		// In a real world app, you might use a remote logging infrastructure
-		let errMsg: string;
-		errMsg = error.message ? error.message : error.toString();
-		console.error(errMsg);
-		return Observable.throw(errMsg);
-  }
 }
