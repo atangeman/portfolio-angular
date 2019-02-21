@@ -8,7 +8,7 @@ https://atangeman.github.io/portfolio-angular/
 
 ## Purpose
 
-The original goal was to create a personal portfolio using a modular, scalable framework that could integrate with the GitHub API and display the readme.md in html format. This would allow the porfolio to automatically update once code was pushed eliminating the need for me to update two separate websites.
+The original goal was to create a personal portfolio using a modular, scalable framework that could integrate with the GitHub API and display the readme.md for code repositories in html format. This would allow the porfolio to automatically update once code was pushed eliminating the need for me to update two separate websites.
 
 My initial experiment used a framework called "Pure-MVC" https://github.com/atangeman/portfolio-puremvc. Development was discontinued due to framework limitations. 
 
