@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 
 import { RepoService } from './repos/repo.service';
 
+import { GistsService } from './gists/gists.service';
+
 import { Repo } from './repos/repo.model';
 
 import { AccordionModule } from 'ngx-bootstrap/accordion';
@@ -43,7 +45,7 @@ import { HomeComponent } from './home/home.component';
     routing
   ],
   exports: [HttpModule],
-  providers: [RepoService, appRoutingProviders],
+  providers: [RepoService, GistsService, appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

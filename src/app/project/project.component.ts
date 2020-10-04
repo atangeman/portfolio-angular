@@ -15,6 +15,7 @@ export class ProjectComponent implements OnInit, OnDestroy {
   private name: string;
   private sub: any;
   public markdownSrc = '### test';
+  public repoHtml: string;
 
   constructor(private route: ActivatedRoute, private repoService: RepoService) {
   }
@@ -29,6 +30,7 @@ export class ProjectComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.name = params["name"]; // cast to number
+      this.repoHtml = params["html_url"]
       this.getRepos(this.name);
     });
   }

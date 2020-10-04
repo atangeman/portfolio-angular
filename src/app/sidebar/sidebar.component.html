@@ -38,6 +38,15 @@
           </ul>
         </div>
       </li>
+      <li><a class="collapsible-header" (click)="getGists()">Gists</a>
+        <div class="collapsible-body">
+          <ul>
+            <li *ngFor="let gist of gists">              
+              <a [routerLink]="['/gists', gist.description]">{{gist.description}}</a>
+            </li>
+          </ul>
+        </div>
+      </li>
       <li><a class="collapsible-header">Cartography</a>
         <div class="collapsible-body">
           <ul>
