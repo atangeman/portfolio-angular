@@ -14,17 +14,14 @@ body {
 	margin: 0; 
 	padding: 0;
 	}
-
-	
-	
 	
 abbr {
 	border-bottom: none;
 	}
-
+/*
 div #wrapperHeader {
 	width:100%;
-	height:125px; /* height of the background image? */
+	height:150px; height of the background image? 
 	background:url("../assets/img/neural-net.jpg");
 	text-align:center;
 	display: block;
@@ -32,10 +29,11 @@ div #wrapperHeader {
 	margin-bottom: 25px;
     border-bottom: 1px solid darkgray;
 }
-	   
+
+
 #wrapperHeader #header {
 	width:1000px;
 	height:125px;
 	margin:0 auto;
 }
-	
+*/

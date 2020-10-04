@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ng build --prod --base-href /portfolio-angular/
+angular-cli-ghpages --repo=https://29ca4dcea8835b359d09636a3eb816b5111ad76e@github.com/atangeman/portfolio-angular.git -T --branch gh-pages --no-silent --email andytangeman@gmail.com

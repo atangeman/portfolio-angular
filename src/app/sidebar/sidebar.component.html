@@ -1,58 +1,32 @@
-<!--<div class="container">
-  <ul id="slide-out" class="side-nav fixed">
-      <li *ngFor="let repo of repos">
-        <a href="#"> {{repo.name}} </a>
-      </li>
-  </ul>
-</div>
--->
-
-<div class="button-collapse top-nav full">
-  <ul class="side-nav fixed">
-    <li>
-      <div class="userView">
-
-        <div class="background">
-        <img src="assets/img/neural-net.jpg">
-        </div>
-        <div class="userInfo">
-          <div class="userView">
-            <a href="#!user"><img class="circle" src="https://github.com/atangeman.png?size=50"></a>
-            <a href="#!name"><span class="name">Andy Tangeman</span></a>
-            <a href="#!email"><span class="email">andytangeman@gmail.com</span></a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <div class="container-fluid">
+      <a class="navbar-brand js-scroll-trigger">
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://github.com/atangeman.png?size=150">
+        </span>
+      </a>
+    <div class="collapse navbar-collapse collapse-panel">
+      <ul class="collapsible" data-collapsible="accordion">
+        <li><a class="collapsible-header" (click)="getRepos()">Projects</a>
+          <div class="collapsible-body">
+            <ul>
+              <li *ngFor="let repo of repos">              
+                <a [routerLink]="['/project', repo.name]">{{repo.name}}</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <hr>
-      </div>
-    </li>
-    <li><a href="https://github.com/atangeman/"><i class="material-icons">github:</i>atangeman.github.io</a></li>
-    <li><a [routerLink]="['/home']">Home</a></li>
-    <!--<li><a href="#!"><i class="material-icons">code</i>portfolio-angular</a></li>-->
-    <li>
-      <div class="divider"></div>
-    </li>
-    <div class="collapse-panel">
-    <ul class="collapsible" data-collapsible="accordion">
-      <li><a class="collapsible-header" (click)="getRepos()">Projects</a>
-        <div class="collapsible-body">
-          <ul>
-            <li *ngFor="let repo of repos">              
-              <a [routerLink]="['/project', repo.name]">{{repo.name}}</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li><a class="collapsible-header">Cartography</a>
-        <div class="collapsible-body">
-          <ul>
-            <li><a href="http://quartic.maps.arcgis.com/apps/Solutions/s2.html?appid=a1322152d26440ff860b429304f18845">Community Map (Interactive)</a></li>
-            <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeaFdRWVZEWDJlaG8/edit">Intergenerational Planning</a></li>
-            <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeT0ZBelE1ODhmMkU/edit">SNAP Education</a></li>
-            <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeVlBIMDJBUFVTR0U/edit">Getis Cluster - ELA</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+        </li>
+        <li><a class="collapsible-header">Cartography</a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="http://quartic.maps.arcgis.com/apps/Solutions/s2.html?appid=a1322152d26440ff860b429304f18845">Community Map (Interactive)</a></li>
+              <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeaFdRWVZEWDJlaG8/edit">Intergenerational Planning</a></li>
+              <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeT0ZBelE1ODhmMkU/edit">SNAP Education</a></li>
+              <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeVlBIMDJBUFVTR0U/edit">Getis Cluster - ELA</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
-  </ul>
-</div>
+  </div>
+</nav>

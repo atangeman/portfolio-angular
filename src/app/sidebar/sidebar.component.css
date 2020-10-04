@@ -5,118 +5,155 @@
 
 }
 .panel.customClass .panel-body {
-  background-color: #337aa7;
+  background-color: #5bc0de;
 }
 
 .panel-body{
-  /*background-color: #282828;*/
-  background-color: #FFFFFF;
-  color:#282828;
+  /*background-color: #2196f3 !important;*/
+  background-color: #2196f3 !important;
+  color: #2196f3 !important;
 
 }
-.side-nav {
-    left: 0;
-    top:0;
-    max-width: 350px;
-    background-color: #FFFFFF;
-    color : #404040;
-    
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+}
+
+@media (min-width: 750px) {
+  #sideNav {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 17rem;
+      height: 100vh;
+  }
+  #sideNav .navbar-brand {
+      display: flex;
+      margin: auto auto 0;
+      padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+      max-width: 10rem;
+      max-height: 50rem;
+      border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+      display: flex;
+      align-items: flex-start;
+      flex-grow: 0;
+      width: 100%;
+      margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+      display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+      display: block;
+  }
 }
 
 .background {
-  color: #282828;
+  color: #FFF !important;
 }
 
 .collapsible ul {
-  background-color: whitesmoke;
-    color: #282828;
+  background-color: #2196f3 !important;
+  color: #FFF !important;
+  height: 100%;
 }
 
 .userView {
-    background-color: white;
-    color: lightgray;
+  background-color: #2196f3 !important;
+  color: lightgray;
+  display: absolute;
 }
 
-.collapse-panel {
-  background-color: whitesmoke;
+#sideNav .collapse-panel {
+  background-color: #2196f3 !important;
   height: auto;
 }
 .collapsible li {
-  background-color: #fcfcfc;
-    color: #282828;
-    border: 1px solid #f9f9f9;
+  color: #FFF !important;
 }
 
 .collapsible-header {
-  color:#282828;
-  background-color: whitesmoke;
+  color: #FFF !important;
+        background-color: #2196f3 !important;
 }
 
 .collapsible-header .active:hover {
-  color:#282828;
+  color: #FFF !important;
   font-size: 12px;
-  background-color:lightsteelblue;
+  background-color:#2196f3;
 }
 
 li .collapsible a {
   font-size: 9px;
-  background-color: whitesmoke;
-  color:#282828;
+        background-color: #2196f3 !important;
+        color: #FFF !important;
 }
 
 .collapsible li:hover {
   background-color:whitesmoke;
-  color:#282828;
+  color: #FFF !important;
 }
 
 .collapsible li .active:hover {
-  background-color:lightsteelblue;
-  color: #282828;
+  background-color:#2196f3;
+  color: #FFF !important;
 }
 
 .collapsible ul li {
-  background-color: whitesmoke;
-  color: #282828;
+        background-color: #2196f3 !important;
+  color: #FFF !important;
   margin-left: 15px;
 }
 
 .collapsible div {
-  background-color: whitesmoke;
-  color: #282828;
+        background-color: #2196f3 !important;
+  color: #FFF !important;
   margin-left: 15px;
 }
 
 .collapsible div .active:hover{
-  background-color: whitesmoke;
-  color: #282828;
+        background-color: #2196f3 !important;
+  color: #FFF !important;
   margin-left: 15px;
 }
 
 .collapsible .active:hover {
-  background-color: whitesmoke;
-  color: #282828;
+        background-color: #2196f3 !important;
+  color: #FFF !important;
 }
 
 
 .userView li a{
-  background-color: whitesmoke;
-  color: #282828;
+        background-color: #2196f3 !important;
+  color: #FFF !important;
   font-weight: bolder;
 }
 
 li .active {
-  color: #282828;
+  color: #FFF !important;
   
-  background-color:lightsteelblue;
+  background-color:#2196f3;
 }
 
 .active {
-    color: #282828;
+    color: #FFF !important;
   opacity: .9;
-  background-color:lightsteelblue;
+  background-color:#2196f3;
 }
 
 ul a{
-    color: #282828;
+    color: #FFF !important;
   opacity: .75;
 }
