@@ -13,11 +13,11 @@ body {
 	background: lightblue;
 	margin: 0; 
 	padding: 0;
-	}
+}
 
 abbr {
 	border-bottom: none;
-	}
+}
 
 .content {
 	padding-top: 50px;
@@ -30,7 +30,7 @@ abbr {
 	text-align:top;
     position: fixed;
 	background: #f8f8f8;
-	  color:#282828;
+	color:#282828;
 
 }
 .navbar-brand {
