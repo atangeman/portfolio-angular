@@ -23,6 +23,7 @@
     "@angular/platform-server": "^6.0.6",
     "@angular/router": "^6.0.6",
     "angular": "^1.7.2",
+    "angular-cli-ghpages": "^0.6.2",
     "angular2-markdown": "^1.6.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.5.7",

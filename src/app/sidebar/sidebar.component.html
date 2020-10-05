@@ -28,36 +28,36 @@
       <div class="divider"></div>
     </li>
     <div class="collapse-panel">
-    <ul class="collapsible" data-collapsible="accordion">
-      <li><a class="collapsible-header" (click)="getRepos()">Projects</a>
-        <div class="collapsible-body">
-          <ul>
-            <li *ngFor="let repo of repos">              
-              <a [routerLink]="['/project', repo.name]">{{repo.name}}</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li><a class="collapsible-header" (click)="getGists()">Gists</a>
-        <div class="collapsible-body">
-          <ul>
-            <li *ngFor="let gist of gists">              
-              <a [routerLink]="['/gists', gist.id, gist.description]">{{gist.description}}</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li><a class="collapsible-header">Cartography</a>
-        <div class="collapsible-body">
-          <ul>
-            <li><a href="http://quartic.maps.arcgis.com/apps/Solutions/s2.html?appid=a1322152d26440ff860b429304f18845">Community Map (Interactive)</a></li>
-            <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeaFdRWVZEWDJlaG8/edit">Intergenerational Planning</a></li>
-            <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeT0ZBelE1ODhmMkU/edit">SNAP Education</a></li>
-            <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeVlBIMDJBUFVTR0U/edit">Getis Cluster - ELA</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li><a class="collapsible-header" (click)="getRepos()">Projects</a>
+          <div class="collapsible-body">
+            <ul>
+              <li *ngFor="let repo of repos">              
+                <a [routerLink]="['/project', repo.name]">{{repo.name}}</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="collapsible-header" (click)="getGists()">Gists</a>
+          <div class="collapsible-body">
+            <ul>
+              <li *ngFor="let gist of gists">              
+                <a [routerLink]="['/gists', gist.id, gist.description]">{{gist.description}}</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="collapsible-header">Cartography</a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="http://quartic.maps.arcgis.com/apps/Solutions/s2.html?appid=a1322152d26440ff860b429304f18845">Community Map (Interactive)</a></li>
+              <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeaFdRWVZEWDJlaG8/edit">Intergenerational Planning</a></li>
+              <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeT0ZBelE1ODhmMkU/edit">SNAP Education</a></li>
+              <li><a href="https://drive.google.com/file/d/0B4qYzXRLWySeVlBIMDJBUFVTR0U/edit">Getis Cluster - ELA</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>
-</nav>
+  </ul>
+</div>

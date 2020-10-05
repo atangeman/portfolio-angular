@@ -34,13 +34,13 @@
 
 .userView .background {
     background-color: white;
-    color: lightgray;
+    color:#282828;
 }
 
 .userView {
     background-color: white;
     opacity: .95;
-    color: lightgray;
+    color:#282828;
 }
 
 #sideNav .collapse-panel {
@@ -64,7 +64,7 @@
 }
 
 .collapsible-header .active:hover {
-  color: #FFF !important;
+  color:#282828;
   font-size: 12px;
   background-color:#2196f3;
 }
@@ -72,17 +72,17 @@
 li .collapsible a {
   font-size: 9px;
         background-color: #2196f3 !important;
-        color: #FFF !important;
+        color:#282828;
 }
 
 .collapsible li:hover {
   background-color:whitesmoke;
-  color: #FFF !important;
+  color:#282828;
 }
 
 .collapsible li .active:hover {
   background-color:#2196f3;
-  color: #FFF !important;
+  color:#282828;
 }
 
 .collapsible ul li {
@@ -97,42 +97,42 @@ li .collapsible a {
 
 .collapsible div {
         background-color: #2196f3 !important;
-  color: #FFF !important;
+        color:#282828;
   margin-left: 15px;
 }
 
 .collapsible div .active:hover{
         background-color: #2196f3 !important;
-  color: #FFF !important;
+        color:#282828;
   margin-left: 15px;
 }
 
 .collapsible .active:hover {
         background-color: #2196f3 !important;
-  color: #FFF !important;
+        color:#282828;
 }
 
 
 .userView li a{
         background-color: #2196f3 !important;
-  color: #FFF !important;
+        color:#282828;
   font-weight: bolder;
 }
 
 li .active {
-  color: #FFF !important;
+  color:#282828;
   
   background-color:#2196f3;
 }
 
 .active {
-    color: #FFF !important;
+  color:#282828;
   opacity: .9;
   background-color:#2196f3;
 }
 
 ul a{
-    color: #FFF !important;
+  color:#282828;
   opacity: .75;
   
 }
