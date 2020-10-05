@@ -3,8 +3,8 @@ export class Repo {
      name: string;
      full_name: string;
      owner: {};
-	 html_url: string;
-	 description: string;
+	html_url: string;
+	description: string;
      fork: boolean;
      url: string;
      forks_url: string;

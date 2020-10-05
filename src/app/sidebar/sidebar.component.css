@@ -9,55 +9,18 @@
 }
 
 .panel-body{
-  /*background-color: #2196f3 !important;*/
-  background-color: #2196f3 !important;
-  color: #2196f3 !important;
+  /*background-color: #282828;*/
+  background-color: #FFFFFF;
+  color:#282828;
 
 }
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
-  text-transform: uppercase;
-  display: block;
-}
-
-@media (min-width: 750px) {
-  #sideNav {
-      text-align: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      width: 17rem;
-      height: 100vh;
-  }
-  #sideNav .navbar-brand {
-      display: flex;
-      margin: auto auto 0;
-      padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-      max-width: 10rem;
-      max-height: 50rem;
-      border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-      display: flex;
-      align-items: flex-start;
-      flex-grow: 0;
-      width: 100%;
-      margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-      flex-direction: column;
-      width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-      display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-      display: block;
-  }
+.side-nav {
+    left: 0;
+   
+    max-width: 350px;
+    background-color: #FFFFFF;
+    color : #404040;
+    
 }
 
 .background {
@@ -65,15 +28,19 @@
 }
 
 .collapsible ul {
-  background-color: #2196f3 !important;
-  color: #FFF !important;
-  height: 100%;
+  background-color: whitesmoke;
+  color: #282828;
+}
+
+.userView .background {
+    background-color: white;
+    color: lightgray;
 }
 
 .userView {
-  background-color: #2196f3 !important;
-  color: lightgray;
-  display: absolute;
+    background-color: white;
+    opacity: .95;
+    color: lightgray;
 }
 
 #sideNav .collapse-panel {
@@ -81,12 +48,19 @@
   height: auto;
 }
 .collapsible li {
-  color: #FFF !important;
+  background-color: #fcfcfc;
+  color: #282828;
+  border: 1px solid #f9f9f9;
+}
+
+.collapsible-body {
+  text-overflow: ellipsis;
 }
 
 .collapsible-header {
-  color: #FFF !important;
-        background-color: #2196f3 !important;
+  color:#282828;
+  background-color: whitesmoke;
+  text-overflow: ellipsis;
 }
 
 .collapsible-header .active:hover {
@@ -112,9 +86,13 @@ li .collapsible a {
 }
 
 .collapsible ul li {
-        background-color: #2196f3 !important;
-  color: #FFF !important;
+  background-color: whitesmoke;
+  display: block;
+  color: #282828;
   margin-left: 15px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .collapsible div {
@@ -156,4 +134,5 @@ li .active {
 ul a{
     color: #FFF !important;
   opacity: .75;
+  
 }

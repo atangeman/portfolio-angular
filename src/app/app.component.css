@@ -13,23 +13,33 @@ body {
 	background: lightblue;
 	margin: 0; 
 	padding: 0;
-	}
-	
-abbr {
-	border-bottom: none;
-	}
-/*
-div #wrapperHeader {
-	width:100%;
-	height:150px; height of the background image? 
-	background:url("../assets/img/neural-net.jpg");
-	text-align:center;
-	display: block;
-	opacity: .75;
-	margin-bottom: 25px;
-    border-bottom: 1px solid darkgray;
 }
 
+abbr {
+	border-bottom: none;
+}
+
+.content {
+	padding-top: 50px;
+	margin-top: 50px;
+}
+.navbar  {
+	width:100%;
+	height:50px; /* height of the background image? */
+	background:url("../assets/img/neural-net.jpg");
+	text-align:top;
+    position: fixed;
+	background: #f8f8f8;
+	color:#282828;
+
+}
+.navbar-brand {
+		  color:#282828;
+}
+
+.btn-info{
+		background: #f8f8f8;
+}
 
 #wrapperHeader #header {
 	width:1000px;

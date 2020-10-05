@@ -4,13 +4,17 @@ import { Http, Response, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
-/*import { Repo } from './repo.model';*/
 
-@Injectable()
-export class RepoService {
-	private rootApi = 'https://api.github.com/'
+@Injectable({
+  providedIn: 'root'
+})
+
+export class GithubService {
+  
+  private rootApi = 'https://api.github.com/'
 	private reposUrl = this.rootApi + 'users/atangeman/repos';
-	private repoUrl = this.rootApi + 'repos/atangeman/';
+  private repoUrl = this.rootApi + 'repos/atangeman/';
+  private gistsUrl = this.rootApi + 'users/atangeman/gists';
 	private requestOptions = null;
 
 	constructor (private http: Http) {
@@ -46,6 +50,13 @@ export class RepoService {
 			.toPromise();
 		return resp["names"];
 	}
+
+  async getGists() : Promise<any[]> {
+		return this.http.get(this.gistsUrl)
+			.map(this.extractData)
+			.catch(this.handleError)
+			.toPromise();
+  }
 
 	private extractData(res: Response) {
 		let body = res.json();
