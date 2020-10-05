@@ -6,6 +6,14 @@ A viewable example of the most recent build can be found by visiting:
 
 https://atangeman.github.io/portfolio-angular/
 
+## Purpose
+
+The original goal was to create a personal portfolio using a modular, scalable framework that could integrate with the GitHub API and display the readme.md for code repositories in html format. This would allow the porfolio to automatically update once code was pushed eliminating the need for me to update two separate websites.
+
+My initial experiment used a framework called "Pure-MVC" https://github.com/atangeman/portfolio-puremvc. Development was discontinued due to framework limitations. 
+
+My second attempt utilized AngularJS: https://github.com/atangeman/portfolio-angularjs. Although I enjoyed the AngularJs environment, the ability to properly handle event delivery using the service / controller pattern made it difficult to perform requests asynchronously.
+
 ## Development server
 
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
@@ -26,13 +34,6 @@ Run ng e2e to execute the end-to-end tests via Protractor. Before running the te
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-## Acknowledgments
-
-- The original goal was to create a personal portfolio using a modular, scalable framework that could integrate with the GitHub API to provide a more detailed front-end experience. 
-
-- My initial experiment used a framework called "Pure-MVC" https://github.com/atangeman/portfolio-puremvc. Development was discontinued due to framework limitations. 
-
-- My second attempt utilized AngularJS: https://github.com/atangeman/portfolio-angularjs. Although I enjoyed the AngularJs environment, the ability to properly handle event delivery using the service / controller pattern made it difficult to master.
 
 - This current attempt is by far the most successful. The funcitonal prototype is easily scalable and intuitive. In addition, the implementation of Typescript offered a more familiar strongly-typed element that helped me progress a bit faster.
 
