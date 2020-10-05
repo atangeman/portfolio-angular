@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-
-import { RepoService } from '../repos/repo.service';
+import { Router } from '@angular/router';
 import { Repo } from '../repos/repo.model';
 
-import { GistsService } from '../gists/gists.service';
+import { GithubService } from '../github.service';
 import { Gist } from '../gists/gist.model';
 
 @Component({
@@ -24,13 +23,17 @@ export class SidebarComponent {
   public customClass: string = 'customClass';
   // end button control
 
-  constructor(private repoService: RepoService, private gistsService: GistsService) {
+  constructor(private router: Router, private githubService: GithubService) {
     //this.getRepos();
   }
 
+  open(id: number) {
+    this.router.navigateByUrl('/gists/' + id);
+  }
+  
   async getGists(): Promise<void> {
     if (this.gists.length < 1) {
-      let gistList = await this.gistsService.getGists();
+      let gistList = await this.githubService.getGists();
       for (let gist of gistList) {
         if (this.gists.map(function(e) { return e.id; }).indexOf(gist.id) == -1) {
             this.gists.push(gist);
@@ -41,9 +44,9 @@ export class SidebarComponent {
 
   async getRepos(): Promise<void> {
     if (this.repos.length < 1) {
-      let repoList = await this.repoService.getRepos();
+      let repoList = await this.githubService.getRepos();
       for (let repo of repoList) {
-        let list: string[] = await this.repoService.getRepoTags(repo.name);
+        let list: string[] = await this.githubService.getRepoTags(repo.name);
         if (list.indexOf("portfolio") > -1 && 
            (this.repos.map(function(e) { return e.name; }).indexOf(repo.name) == -1)) {
             this.repos.push(repo);

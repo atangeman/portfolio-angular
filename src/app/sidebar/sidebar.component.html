@@ -42,7 +42,7 @@
         <div class="collapsible-body">
           <ul>
             <li *ngFor="let gist of gists">              
-              <a [routerLink]="['/gists', gist.description]">{{gist.description}}</a>
+              <a [routerLink]="['/gists', gist.id, gist.description]">{{gist.description}}</a>
             </li>
           </ul>
         </div>

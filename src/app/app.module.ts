@@ -7,11 +7,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { RepoService } from './repos/repo.service';
-
-import { GistsService } from './gists/gists.service';
-
-import { Repo } from './repos/repo.model';
+import { GithubService } from './github.service';
 
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { CarouselModule } from 'ngx-bootstrap';
@@ -26,6 +22,8 @@ import { ProjectComponent } from './project/project.component';
 
 import { routing, appRoutingProviders } from './app.routes';
 import { HomeComponent } from './home/home.component';
+import { GistComponent } from './gists/gist.component';
+import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     SidebarComponent,
     SlideshowComponent,
     ProjectComponent,
-    HomeComponent
+    HomeComponent,
+    GistComponent
   ],
   imports: [
     BrowserModule,
@@ -42,10 +41,11 @@ import { HomeComponent } from './home/home.component';
     AccordionModule.forRoot(),
     CarouselModule.forRoot(),
     MarkdownModule.forRoot(),
-    routing
+    routing,
+    NgxGistModule
   ],
   exports: [HttpModule],
-  providers: [RepoService, GistsService, appRoutingProviders],
+  providers: [GithubService, appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
